@@ -4,9 +4,11 @@ from datetime import datetime
 ############# Creacion de la clase negocio###############
 class Negocio:
 
+    Empleados = []
+    Clientes = []
+
     def __init__(self,Nombre): #metodo init para iniciar la clase
         self._Nombre = Nombre
-        self._Empleados = []
         self._abre = 8
         self._cierra = 16
 

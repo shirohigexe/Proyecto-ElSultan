@@ -9,7 +9,7 @@ class Orden:
         self._Sopa = S
         self._Bebida = B
 
-############metodos gett y sett############
+############metodos gett y sett y str############
     def getProteina(self):
         return self._Proteina
 
@@ -40,3 +40,7 @@ class Orden:
 
     def setBebida(self, newB):
         self._Bebida = newB
+
+##############################
+    def __str__(self):
+        return "Proteina: {},\nCarbohidrato: {},\nEnsalada: {},\nSopa: {},\nBebida: {}".format(self._Proteina,self._Carbohidrato,self._Ensalada,self._Sopa,self._Bebida)
