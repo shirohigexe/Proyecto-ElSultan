@@ -1,4 +1,4 @@
-from Orden import *
+from Trabajador.Orden import *
 
 ################creacion de clase###########
 class Cliente:

@@ -1,4 +1,4 @@
-class User:
+class Trabajador:
     #podemos poner un atributo de clase que sea un salariop base (minimo) con metodo de clase aceedemos a el.
 
     def __init__(self,Nombre,Id,Salario,Clave):
