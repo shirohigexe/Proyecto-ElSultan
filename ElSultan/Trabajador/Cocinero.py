@@ -1,4 +1,4 @@
-from Trabajador import *
+import Trabajador
 from Orden import *
 ###########se crea la clase#################
 class Cocinero(Trabajador):##hereda de la clase Trabajador

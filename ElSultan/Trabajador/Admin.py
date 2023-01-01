@@ -1,4 +1,5 @@
-from Trabajador.Trabajador import *
+import Trabajador
+from Negocio import *
 
 ######creacion de la clase########
 class Administrador(Trabajador):
@@ -8,11 +9,14 @@ class Administrador(Trabajador):
         super().__init__(Nombre, Id, Salario, Clave)
 
 ######metodos especiales########
-    def AgregarEmpleado(self,Trabajador):#metodo para agregar un empleado al atributo de clase de la clase negocio
-        pass#No esta listo
+    def AgregarEmpleado(self,nombre,id,salario,clave):#metodo para agregar un empleado al atributo de clase de la clase negocio
+        nuevo = Trabajador(nombre,id,salario,clave)
+        Negocio.Empleados.append(nuevo)
 
-    def DespedirEmpleado(self,Trabajador):#metodo para eliminar un empleado del negocio
-        pass#no esta listo
+    def DespedirEmpleado(self,id):#metodo para eliminar un empleado del negocio
+        for i in Negocio.Empleados: #buscamos al empleado deacuerdo al id
+            if i.getId() == id:
+                Negocio.Empleados.remove(i) #lo removemos
 
-    def CambiarSalario(self,Trabajador):#Metodo para cambiar el salario del empleado
-        pass#no esta listo
+    def CambiarSalario(self,Trabajador,nuevo):#Metodo para cambiar el salario del empleado
+        Trabajador.setSalario(nuevo)

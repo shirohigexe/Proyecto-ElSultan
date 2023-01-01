@@ -1,4 +1,4 @@
-from Trabajador.Trabajador import *
+import Trabajador
 
 class Conductor(Trabajador):
     Enruta = False

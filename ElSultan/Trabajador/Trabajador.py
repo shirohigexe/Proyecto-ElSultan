@@ -29,7 +29,7 @@ class Trabajador:
     def setId(self,nId):
         self.Id = nId
 
-    def setNombre(self,nSalario):
+    def setSalario(self,nSalario):
         self.Salario = nSalario
 
     def setNombre(self,nClave):

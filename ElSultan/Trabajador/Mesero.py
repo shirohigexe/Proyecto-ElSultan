@@ -1,5 +1,5 @@
-from Trabajador.Trabajador import *
-from Orden import *
+import Trabajador
+import Orden
 
 ######creacion de la clase#######
 class Mesero(Trabajador):
@@ -9,12 +9,12 @@ class Mesero(Trabajador):
         super().__init__(Nombre, Id, Salario, Clave)
 
 #######metodos especiales######
-    def TomarOrden(self,Orden):
-        orden = Orden #de la clase orden
-        pass#no esta listo
+    def TomarOrden(self,p,c,e,s,b):
+        orden = Orden(p,c,e,s,b) #de la clase orden
+        return orden
 
     def PasarOrden(self):
-        pass #no esta listo
+        pass #Nota, no la veo necesario
 
     def DarMenu(self):
         pass#no esta listo

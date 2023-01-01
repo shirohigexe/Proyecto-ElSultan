@@ -22,3 +22,8 @@ class Caja:
     @classmethod
     def CambiarClave(cls,NuevaClave):#metodo para cambiar la clave de acceso
         cls._Clave = NuevaClave
+
+    def Facturacion(self,valor_consumo,pago):#metodo para generar una factura
+        self._CajaBase += valor_consumo #se suma la ganancia
+        devolucion = pago - valor_consumo #se calcula cuanto se debe devolver al cliente
+        return 'Devuelve {}'.format(devolucion)
