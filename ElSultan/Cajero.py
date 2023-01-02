@@ -1,4 +1,4 @@
-import Trabajador
+from Trabajador import *
 
 ########creacion de la clase########
 class Cajero(Trabajador):

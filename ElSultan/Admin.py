@@ -1,4 +1,4 @@
-import Trabajador
+from Trabajador import *
 from Negocio import *
 
 ######creacion de la clase########
@@ -20,3 +20,4 @@ class Administrador(Trabajador):
 
     def CambiarSalario(self,Trabajador,nuevo):#Metodo para cambiar el salario del empleado
         Trabajador.setSalario(nuevo)
+

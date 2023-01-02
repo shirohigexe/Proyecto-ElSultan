@@ -21,20 +21,6 @@ class Trabajador:
     def getClave(self):
         return self.Clave
 
-    # metedos set de los atributos
-
-    def setNombre(self,nNombre):
-        self.Nombre = nNombre
-
-    def setId(self,nId):
-        self.Id = nId
-
-    def setSalario(self,nSalario):
-        self.Salario = nSalario
-
-    def setNombre(self,nClave):
-        self.Clave = nClave
-
     #metodos asoaciados a la clase
 
     def Entrada(self, datatime):
@@ -44,7 +30,9 @@ class Trabajador:
         return None
 
     def CambiarClave(self, String):
-        return None
+        self.Clave == String
 
-    def IngresarClave(self, String):
-        return None
+    def ComprobarClave(self,intento):
+        if intento == self.Clave:
+            return True
+        return False

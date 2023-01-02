@@ -1,4 +1,4 @@
-import Trabajador
+from Trabajador import *
 import Orden
 
 ######creacion de la clase#######
@@ -17,4 +17,4 @@ class Mesero(Trabajador):
         pass #Nota, no la veo necesario
 
     def DarMenu(self):
-        pass#no esta listo
+        pass#no esta listo, debido a que logro visualizar el menu
