@@ -2,7 +2,7 @@ from Orden import *
 
 ################creacion de clase###########
 class Cliente:
-
+#NOTA: seria buena idea aregar un contador para ver que clietne es mas frecuente y asi dar descuento
 ##############creacion del metodo init#############
     def __init__(self,nombre,id):
         self._Nombre = nombre

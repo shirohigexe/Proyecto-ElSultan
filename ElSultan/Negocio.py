@@ -1,11 +1,11 @@
 from datetime import datetime
 
-
 ############# Creacion de la clase negocio###############
 class Negocio:
 
     Empleados = []
     Clientes = []
+    #NOTA: seria bueno tener una tabla con los Trabajadores que fueron despedidos-fecha de ingreso-fecha de salida
 
     def __init__(self,Nombre): #metodo init para iniciar la clase
         self._Nombre = Nombre

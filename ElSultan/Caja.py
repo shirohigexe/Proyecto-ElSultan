@@ -7,12 +7,9 @@ class Caja:
     def __init__(self,Cajero):
         self._CajaBase = 100000
         self._Usuario = Cajero
-        
+        ######NOTA: seria bueno tener una tabla que indique el dia-mes-ingresos-gastos
 
-########metodos especiales#############
-    def PagarEmpleados(self,Trabajador):
-        pass ##pago al trabajador pendiente
-
+########metodos de la clase###############
     @classmethod
     def IngresaClave(cls,IntentoClave):#verificacion de clave de acceso
         if IntentoClave == cls.Clave:
@@ -22,6 +19,10 @@ class Caja:
     @classmethod
     def CambiarClave(cls,NuevaClave):#metodo para cambiar la clave de acceso
         cls._Clave = NuevaClave
+
+########metodos especiales#############
+    def PagarEmpleados(self,Trabajador):
+        pass ##pago al trabajador pendiente
 
     def Facturacion(self,valor_consumo,pago):#metodo para generar una factura
         self._CajaBase += valor_consumo #se suma la ganancia

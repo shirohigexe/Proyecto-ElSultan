@@ -18,6 +18,8 @@ class Administrador(Trabajador):
             if i.getId() == id:
                 Negocio.Empleados.remove(i) #lo removemos
 
-    def CambiarSalario(self,Trabajador,nuevo):#Metodo para cambiar el salario del empleado
-        Trabajador.setSalario(nuevo)
+    def CambiarSalario(self,id,nuevo):#Metodo para cambiar el salario del empleado
+        for i in Negocio.Empleados:
+            if i.getId() == id:
+                i.Salario = nuevo
 
