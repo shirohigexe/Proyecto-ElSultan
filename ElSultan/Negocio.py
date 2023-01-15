@@ -10,14 +10,14 @@ class Negocio:
     def __init__(self,Nombre): #metodo init para iniciar la clase
         self._Nombre = Nombre
         self._abre = 8
-        self._cierra = 16
+        self._cierra = 15
 
 ##########gett, sett y str##############
     def __str__(self):
         return self._Nombre
 
 
-########metodos especiales ##############
+########metodos de la clase ##############
 
     #metodo que retornara True si el negocio está abierto en el horario estipulado de lo contrario 
     #retorna un False
