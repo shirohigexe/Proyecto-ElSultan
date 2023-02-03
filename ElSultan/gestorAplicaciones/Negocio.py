@@ -5,12 +5,13 @@ class Negocio:
 
     Empleados = []
     Clientes = []
+    Despedidos = []
     #NOTA: seria bueno tener una tabla con los Trabajadores que fueron despedidos-fecha de ingreso-fecha de salida
 
     def __init__(self,Nombre): #metodo init para iniciar la clase
         self._Nombre = Nombre
         self._abre = 8
-        self._cierra = 15
+        self._cierra = 8
 
 ##########gett, sett y str##############
     def __str__(self):
