@@ -1,6 +1,6 @@
 from datetime import datetime
 
-class Trabajador:
+class Trabajador():
     #podemos poner un atributo de clase que sea un salariop base (minimo) con metodo de clase aceedemos a el.
     _Trabajadores = []
 

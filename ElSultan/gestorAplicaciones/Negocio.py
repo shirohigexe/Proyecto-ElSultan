@@ -1,8 +1,9 @@
 from datetime import datetime
 
 ############# Creacion de la clase negocio###############
-class Negocio:
+class Negocio():
 
+    _administrador = None
     Empleados = []
     Clientes = []
     Despedidos = []
@@ -32,3 +33,7 @@ class Negocio:
     def CambiarHorario(self,Horaabierto,Horacerrado):
         self._abre = Horaabierto
         self._cierra = Horacerrado
+
+    @classmethod
+    def cambiarAdmin(cls,admin):
+        cls._administrador = admin

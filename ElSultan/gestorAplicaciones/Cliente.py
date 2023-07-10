@@ -1,4 +1,4 @@
-from Orden import *
+from gestorAplicaciones.Orden import *
 
 ################creacion de clase###########
 class Cliente:

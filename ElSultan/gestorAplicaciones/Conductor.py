@@ -1,5 +1,5 @@
-from Trabajador import *
-from Orden import *
+from gestorAplicaciones.Trabajador import *
+from gestorAplicaciones.Orden import *
 
 class Conductor(Trabajador):
 

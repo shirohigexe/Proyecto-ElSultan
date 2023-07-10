@@ -1,5 +1,5 @@
-from Trabajador import *
-from Orden import *
+from gestorAplicaciones.Trabajador import *
+from gestorAplicaciones.Orden import *
 ###########se crea la clase#################
 class Cocinero(Trabajador):##hereda de la clase Trabajador
 

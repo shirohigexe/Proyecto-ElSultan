@@ -1,4 +1,4 @@
-from Trabajador import *
+from gestorAplicaciones.Trabajador import *
 
 ########creacion de la clase########
 class Cajero(Trabajador):

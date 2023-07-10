@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timedelta
 import pandas as pd
-from Negocio import *
+from gestorAplicaciones.Negocio import *
 
 #################Creacion de clase #################
 class Caja:
