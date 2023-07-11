@@ -3,7 +3,11 @@ from tkinter import Tk,Label, Button, Entry
 
 #creacion de eventos 
 def iniciar():
-    print("trabajando")
+    if (usuario.get() == "David") and (contrasena.get() == "1234"):
+        print("accedio correctamente")
+    else:
+        print("denegado")
+
 
 #creacion de ventana de inicio de secion
 ventana_inicio = Tk()

@@ -53,3 +53,6 @@ class Trabajador():
     def getTrabajadores(cls):
         return cls._Trabajadores
 
+    @classmethod
+    def setTrabajadores(cls,trabajadore):
+        cls._Trabajadores = trabajadore
