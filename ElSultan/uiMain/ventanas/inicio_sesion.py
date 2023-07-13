@@ -1,5 +1,6 @@
 #importacion de librerias y metodos
 from tkinter import Tk,Label, Button, Entry
+import tkinter as tk
 
 #creacion de eventos 
 def iniciar():
@@ -13,6 +14,9 @@ def iniciar():
 ventana_inicio = Tk()
 ventana_inicio.geometry("400x400")
 ventana_inicio.title("Inicio de sesion")
+icono = tk.PhotoImage(file="/home/shirohige/Desktop/Proyecto-ElSultan/ElSultan/uiMain/imagenes/DALLE.png")
+ventana_inicio.iconphoto(True,icono)
+
 
 #creacion del labels u sus respectivas entradas
 lbl_wellcome = Label(ventana_inicio, text="Bienvenido a tu negocio",width=30,height=5)
