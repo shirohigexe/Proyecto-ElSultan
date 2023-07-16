@@ -1,6 +1,16 @@
 
 from gestorAplicaciones.Trabajador import *
+from gestorAplicaciones.Caja import *
+from gestorAplicaciones.Cajero import *
+from gestorAplicaciones.Cliente import *
+from gestorAplicaciones.Negocio import *
 
-yo = Trabajador("david urrego serna", 1000313925, 500000, 2123)
-otro = Trabajador("yina",25897984619, 9845616, 1234)
-otromas = Trabajador("Samuel", 51565265, 8522, 6789)
+negocio = Negocio("elSultan")
+
+david = Cajero("david",1000313925,500000,1234)
+
+Caja = Caja(david,negocio)
+
+print(negocio.Estado())
+
+Caja.Banlance(20000,15000)

@@ -31,10 +31,10 @@ usuario.pack()
 #apartado del usuario (contraseña)
 lbl_contrasena = Label(ventana_inicio, text="Contraseña",width=30,height=5)
 lbl_contrasena.pack()
-contrasena = Entry(ventana_inicio,width=30)
+contrasena = Entry(ventana_inicio,width=30,show="*")
 contrasena.pack()
 
 #creacion de botones
-iniciar = Button(ventana_inicio,text="iniciar secion",command=iniciar,bg="gray",padx=15,pady=10).pack()
+iniciar = Button(ventana_inicio,text="iniciar sesion",command=iniciar,bg="gray",padx=15,pady=10).pack()
 
 ventana_inicio.mainloop()
